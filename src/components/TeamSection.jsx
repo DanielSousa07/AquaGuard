@@ -62,12 +62,12 @@ const WaveCanvas = ({ isHovering }) => {
 };
 
 const teamMembers = [
-  { name: 'Marcelo Loureiro', role: 'Marcelo Loureiro', image: 'https://placehold.co/128x128/0077ff/ffffff?text=ML' },
-  { name: 'Daniel Mesquita', role: 'Daniel Mesquita', image: 'https://placehold.co/128x128/0077ff/ffffff?text=DM' },
-  { name: 'Abgail Fernandes', role: 'Abgail Fernandes', image: 'https://placehold.co/128x128/0077ff/ffffff?text=AF' },
-  { name: 'Adriele Rocha', role: 'Adriele Rocha', image: 'https://placehold.co/128x128/0077ff/ffffff?text=AR' },
-  { name: 'Stefhany Azevedo', role: 'Stefhany Azevedo', image: 'https://placehold.co/128x128/0077ff/ffffff?text=SA' },
-  { name: 'André Wallas', role: 'André Wallas', image: 'https://placehold.co/128x128/0077ff/ffffff?text=AW' },
+  { name: 'Marcelo Loureiro', role: 'Marcelo Loureiro', image: '/Perfis/Marcelo.jpeg' },
+  { name: 'Daniel Mesquita', role: 'Daniel Mesquita', image: '/Perfis/Daniel.jpeg' },
+  { name: 'Abgail Fernandes', role: 'Abgail Fernandes', image: '/Perfis/Abgail.jpeg' },
+  { name: 'Adriele Rocha', role: 'Adriele Rocha', image: '/Perfis/Adriele.jpeg' },
+  { name: 'Stefhany Azevedo', role: 'Stefhany Azevedo', image: '/Perfis/Ster.jpeg' },
+  { name: 'André Wallas', role: 'André Wallas', image: '/Perfis/Andre.jpeg' },
 ];
 
 const TeamSection = () => {
