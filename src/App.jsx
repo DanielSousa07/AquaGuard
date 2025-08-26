@@ -9,7 +9,11 @@ export default function App() {
       {/* Header */}
       <header className="header">
         <nav>
-          <h1 className="logo">AquaGuard</h1>
+          <h1 className="logo">
+            <span>Tech Gun's</span>
+            <img src="/LOGOTECHGUNS256.png" alt="Tech Gun's LOGO" />
+          </h1>
+
           <ul className={`menu ${open ? "open" : ""}`}>
             <li>
               <a href="#problema" onClick={() => setOpen(false)}>
@@ -49,7 +53,7 @@ export default function App() {
       </header>
 
       {/* Hero */}
-      <section className="hero" >
+      <section className="hero">
         <div className="hero-content">
           <h2>AquaGuard</h2>
           <p>
@@ -120,13 +124,56 @@ export default function App() {
       </section>
       {/* Conteúdo */}
       <section id="problema" className="section" data-aos="fade-up">
-        <h3>Qual problema iremos resolver?</h3>
-        <p>
-          Segundo a WWF e a Universidade de Newcastle, em apenas quatro anos o
-          ser humano consome, em média, 1 kg de microplástico. Essas partículas
-          podem alcançar o cérebro e prejudicar a saúde neurológica. É urgente
-          uma solução para removê-las da água.
-        </p>
+        <div className="problem-content">
+          <div className="problem-text">
+            <h3>Qual problema iremos resolver?</h3>
+            <p>
+              A poluição por microplásticos é uma crise ambiental e de saúde
+              global crescente. Essas minúsculas partículas de plástico, menores
+              que 5 milímetros, são onipresentes em nossos oceanos, solos e até
+              mesmo no ar que respiramos. Mas o impacto mais alarmante é o que
+              elas causam dentro do nosso próprio corpo.
+            </p>
+            <p>
+              Segundo relatórios da WWF e da Universidade de Newcastle,
+              chocantes <strong>
+                1 kg de microplástico é consumido anualmente por cada
+                ser humano
+              </strong> em média. Isso equivale a comer um cartão de crédito
+              por semana!
+            </p>
+            <h4>Por que isso é um problema grave?</h4>
+            <ul>
+              <li>
+                <b>Saúde Humana:</b> Microplásticos podem carregar toxinas e se
+                acumular em órgãos, atravessando barreiras biológicas e chegando
+                ao cérebro, com potenciais danos neurológicos.
+              </li>
+              <li>
+                <b>Meio Ambiente:</b> Contaminam ecossistemas inteiros, afetando a
+                vida marinha e a cadeia alimentar, pois são confundidos com
+                alimento por animais.
+              </li>
+              <li>
+                <b>Fontes Diversas:</b> Originam-se da degradação de plásticos
+                maiores, de produtos de higiene pessoal, roupas sintéticas e até
+                mesmo da poeira da cidade.
+              </li>
+            </ul>
+            <p>
+              A urgência de encontrar soluções eficazes para remover essas
+              partículas da nossa água potável e do meio ambiente nunca foi tão
+              clara. É uma questão que afeta a todos, desde a nascente do rio
+              Parnaíba até as praias de Luis Correia.
+            </p>
+          </div>
+          <div className="problem-image">
+            <img
+              src="/problem.png"
+              alt="Pessoa pensando sobre a poluição da água"
+            />
+          </div>
+        </div>
       </section>
 
       <section id="solucao" className="section light" data-aos="fade-up">
@@ -178,11 +225,11 @@ export default function App() {
         <h3>Equipe</h3>
         <div className="grid team">
           {[
-            "Marcelo",
-            "Daniel",
-            "Abgail",
-            "Adriele",
-            "Stefhany",
+            "Marcelo Loureiro",
+            "Daniel Mesquita",
+            "Abgail Fernandes",
+            "Adriele Rocha",
+            "Stefhany Azevedo",
             "André Wallas",
           ].map((nome) => (
             <div key={nome} className="card team-card">
