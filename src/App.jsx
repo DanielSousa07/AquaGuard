@@ -1,5 +1,7 @@
 import { useState } from "react";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
+import ProblemSection from "./components/ProblemSection";
+import SolutionSection from "./components/SolutionSection";
 import "./App.css";
 
 export default function App() {
@@ -56,68 +58,9 @@ export default function App() {
       {/* Hero */}
       <Hero/>
       {/* Conteúdo */}
-      <section id="problema" className="section" data-aos="fade-up">
-        <div className="problem-content">
-          <div className="problem-text">
-            <h3>Qual problema iremos resolver?</h3>
-            <p>
-              A poluição por microplásticos é uma crise ambiental e de saúde
-              global crescente. Essas minúsculas partículas de plástico, menores
-              que 5 milímetros, são onipresentes em nossos oceanos, solos e até
-              mesmo no ar que respiramos. Mas o impacto mais alarmante é o que
-              elas causam dentro do nosso próprio corpo.
-            </p>
-            <p>
-              Segundo relatórios da WWF e da Universidade de Newcastle,
-              chocantes <strong>
-                1 kg de microplástico é consumido anualmente por cada
-                ser humano
-              </strong> em média. Isso equivale a comer um cartão de crédito
-              por semana!
-            </p>
-            <h4>Por que isso é um problema grave?</h4>
-            <ul>
-              <li>
-                <b>Saúde Humana:</b> Microplásticos podem carregar toxinas e se
-                acumular em órgãos, atravessando barreiras biológicas e chegando
-                ao cérebro, com potenciais danos neurológicos.
-              </li>
-              <li>
-                <b>Meio Ambiente:</b> Contaminam ecossistemas inteiros, afetando a
-                vida marinha e a cadeia alimentar, pois são confundidos com
-                alimento por animais.
-              </li>
-              <li>
-                <b>Fontes Diversas:</b> Originam-se da degradação de plásticos
-                maiores, de produtos de higiene pessoal, roupas sintéticas e até
-                mesmo da poeira da cidade.
-              </li>
-            </ul>
-            <p>
-              A urgência de encontrar soluções eficazes para remover essas
-              partículas da nossa água potável e do meio ambiente nunca foi tão
-              clara. É uma questão que afeta a todos, desde a nascente do rio
-              Parnaíba até as praias de Luis Correia.
-            </p>
-          </div>
-          <div className="problem-image">
-            <img
-              src="/problem.png"
-              alt="Pessoa pensando sobre a poluição da água"
-            />
-          </div>
-        </div>
-      </section>
+     <ProblemSection />
 
-      <section id="solucao" className="section light" data-aos="fade-up">
-        <h3>A Solução do Problema</h3>
-        <p>
-          O AquaGuard é uma caixa instalada no cano da caixa d’água que usa
-          campo eletrostático para reter microplásticos, deixando a água mais
-          limpa para o uso diário.
-        </p>
-        <div className="prototype">Protótipo (mockup)</div>
-      </section>
+    <SolutionSection/>
 
       <section id="vantagens" className="section" data-aos="fade-up">
         <h3>Vantagens</h3>
