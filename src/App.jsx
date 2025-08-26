@@ -2,6 +2,8 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import ProblemSection from "./components/ProblemSection";
 import SolutionSection from "./components/SolutionSection";
+import AdvantagesSection from "./components/AdvantagesSection";
+import TeamSection from "./components/TeamSection";
 import "./App.css";
 
 export default function App() {
@@ -56,65 +58,18 @@ export default function App() {
       </header>
 
       {/* Hero */}
-      <Hero/>
+      <Hero />
       {/* Conteúdo */}
-     <ProblemSection />
+      <ProblemSection />
 
-    <SolutionSection/>
+      <SolutionSection />
 
-      <section id="vantagens" className="section" data-aos="fade-up">
-        <h3>Vantagens</h3>
-        <div className="grid">
-          <div className="card">💧 Segurança elétrica total</div>
-          <div className="card">⚙️ Instalação simples</div>
-          <div className="card">♻️ Estrutura modular e acessível</div>
-        </div>
-      </section>
+      <AdvantagesSection />
 
-      <section id="diferencial" className="section light" data-aos="fade-up">
-        <h3>Nosso Diferencial</h3>
-        <ul>
-          <li>✔ Instalações externas e seguras</li>
-          <li>✔ Baixíssimo consumo de energia</li>
-          <li>✔ Pode ser feito com materiais recicláveis ou impressão 3D</li>
-          <li>✔ Potencial educacional e replicável</li>
-        </ul>
-      </section>
+      <TeamSection />
 
-      <section id="modelo" className="section" data-aos="fade-up">
-        <h3>Modelo de Negócio</h3>
-        <div className="grid">
-          <div className="card">
-            <b>B2C</b>
-            <br />
-            Consumidores que têm caixas d’água
-          </div>
-          <div className="card">
-            <b>B2B</b>
-            <br />
-            Empresas de construções
-          </div>
-        </div>
-      </section>
 
-      <section id="equipe" className="section light" data-aos="fade-up">
-        <h3>Equipe</h3>
-        <div className="grid team">
-          {[
-            "Marcelo Loureiro",
-            "Daniel Mesquita",
-            "Abgail Fernandes",
-            "Adriele Rocha",
-            "Stefhany Azevedo",
-            "André Wallas",
-          ].map((nome) => (
-            <div key={nome} className="card team-card">
-              <div className="avatar"></div>
-              <p>{nome}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+
 
       <footer className="footer">
         <p>© 2025 AquaGuard - Todos os direitos reservados</p>

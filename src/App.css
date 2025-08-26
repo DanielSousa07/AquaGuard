@@ -39,7 +39,6 @@ body {
   margin: auto;
   padding: 1.5rem 2rem;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -99,24 +98,31 @@ body {
 
 @media (max-width: 768px) {
   .menu {
-    display: none;
+    display: none; /* Esconde o menu por padrão */
     position: absolute;
-    top: 60px;
-    right: 20px;
-    background: white;
+    top: 5.5rem; /* Ajusta a posição para ficar abaixo do header */
+    right: 2rem;
+    background-color: white;
     flex-direction: column;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 200px; /* Largura do menu dropdown */
+    text-align: left;
   }
   .menu.open {
-    display: flex;
+    display: flex; /* Exibe o menu quando a classe 'open' é ativada */
+  }
+  .menu li {
+    padding: 0.5rem 0;
   }
   .hamburger {
-    display: block;
+    display: block; /* Exibe o ícone de hambúrguer no mobile */
+  }
+  .header nav {
+    padding: 1rem 2rem; /* Ajusta o padding do header para mobile */
   }
 }
-
 /* --- Hero --- */
 .hero {
   width: 100vw;
