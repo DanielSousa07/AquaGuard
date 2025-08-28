@@ -83,7 +83,7 @@ const SolutionSection = () => {
     threshold: 0.2,
   });
 
-  const videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+  const videoUrl = "https://www.youtube.com/embed/kcwuitsk-mo";
 
   return (
     <section id="solucao" className="section light" ref={ref}>
