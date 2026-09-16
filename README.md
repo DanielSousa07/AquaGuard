@@ -4,7 +4,7 @@
 
 **Tecnologia eletrostática segura e acessível para purificar sua água.**
 
-> 🔗 **[Acesse o projeto online aqui](COLOQUE-O-LINK-DO-DEPLOY-AQUI)**
+> 🔗 **[Acesse o projeto online aqui](aqua-guard-ebon.vercel.app)**
 
 </div>
 
@@ -13,7 +13,7 @@
 ## 💻 Preview
 
 <div align="center">
-  <!-- Renomeie a imagem image_f5702a.png para preview.png e coloque na raiz do projeto -->
+ 
   <img src="./preview.png" alt="Demonstração da Landing Page AquaGuard" width="800px" />
 </div>
 
